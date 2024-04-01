@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#000000">
+    <link rel="shortcut icon" href="##FAV_ICON_PATH##">
+    <title>##TITLE##</title>
+    <meta name="description" content="##DESC##" />
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="##TITLE##">
+    <meta property="og:description" content="##DESC##">
+    <meta property="og:url" content="##CANONICAL##">
+    <link rel="canonical" href="##CANONICAL##" />
+    <meta property="og:image" content="##SHARE-IMAGE##">
+    <meta name="twitter:title" content="##TITLE##">
+    <meta name="twitter:description" content="##DESC##">
+    <meta name="twitter:image" content="##SHARE-IMAGE##">
+    <meta name="google-site-verification" content="X">
+    <link href="/static/css/font.css" rel="preload" as="style" onload="this.rel='stylesheet'">
+    <style>
+        <!-- CSS -->
+    </style>
+    <!-- NOINDEXTAGS -->
+</head>
+
+<body>
+
+<noscript>
+    You need to enable JavaScript to run this app.
+</noscript>
+<div id="root">
+    <!-- CONTENT -->
+</div>
+<!--    <script async src="/static/js/main.bundle.js"></script>-->
+<script>
+    window.initialStoreData = "-- STORES --";
+</script>
+<script>
+    var cssId = '/static/css/font.css';
+    var keyframeCss = '/static/css/extra/keyframes.css';
+    document.addEventListener('mousedown', viewEvent);
+    document.addEventListener('mousemove', viewEvent);
+    document.addEventListener('touchstart', viewEvent);
+    document.addEventListener('scroll', viewEvent);
+    document.addEventListener('keydown', viewEvent);
+
+    function viewEvent(evt) {
+        if (!document.getElementById("keyframeCss")) {
+            var animCss = document.createElement('link');
+            animCss.href = keyframeCss;
+            animCss.rel = "stylesheet";
+            animCss.id = "keyframeCss";
+            document.head.appendChild(animCss)
+        }
+    }
+</script>
+<!-- SCRIPTS -->
+</body>
+
+</html>

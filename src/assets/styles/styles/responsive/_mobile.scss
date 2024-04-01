@@ -1,0 +1,11 @@
+@media only screen and (max-width: 640px){
+  .services-root{
+    .services-block{
+      width: 100%!important;
+    }
+    .services-container{
+      flex-direction: column;
+    }
+  }
+
+}

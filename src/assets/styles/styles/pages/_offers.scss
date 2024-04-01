@@ -1,0 +1,80 @@
+.offers-root{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.offers-content-wrapper{
+  margin: 0 0 40px;
+}
+.offers-content-container{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+}
+.offers-left-container{
+  width: 48%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.offers-image-block{
+  width: 100%;
+  height: 500px;
+}
+.offers-image-block {
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+}
+.offers-content-block{
+  width: 48%;
+}
+.price-top-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.price-bottom-container{
+  margin: 40px 0 0;
+}
+.offers-price-container{
+  margin: 50px 0 0;
+}
+.price-block{
+  width: 38%;
+  padding: 25px;
+  border: 9px solid grey;
+  text-align: center;
+}
+.validity-block{
+  width: 38%;
+  padding: 25px;
+  border: 9px solid pink;
+  text-align: center;
+}
+.request-block{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.request-item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+  padding: 10px;
+  border: 1px solid grey;
+  border-radius: 16px;
+  cursor: pointer;
+}
+.request-item:hover{
+  border-color: red;
+
+  color: red;
+
+}

@@ -1,0 +1,294 @@
+@media only screen and (max-width: 1200px) {
+  .header-root{
+    .header-container{
+      display: none;
+    }
+    .header-wrapper{
+      padding: 10px 30px;
+      .header-bottom-wrapper{
+        display: none;
+      }
+      .header-top-wrapper{
+        .logo-container{
+          .logo-item{
+            width: 117px;
+            height: 60px;
+
+          }
+        }
+      }
+
+    }
+    .mobil-header-open-item{
+      display: flex !important;
+    }
+    &.sticky{
+      .header-top-wrapper{
+        display: flex;
+      }
+    }
+    .mobile-header-aside-menu{
+      width: 320px;
+
+
+      background: linear-gradient(to bottom, #fdabb7, #333c4a);
+
+      height: 100vh;
+      max-height: 100vh;
+      z-index: 2;
+      overflow: auto;
+    }
+    .mobil-header-open-item{
+      display: none;
+      margin: 0 20px 0 0;
+      cursor: pointer;
+      width: 30px;
+      height: 30px;
+
+      align-items: center;
+      justify-content: center;
+      svg{
+        path{
+          fill{
+            color: white;
+
+          }
+        }
+      }
+      &:hover{
+        svg{
+          width: 30px;
+          height: 30px;
+        }
+      }
+    }
+
+  }
+  .main-root{
+    &.open{
+      .main{
+          width: 70%;
+      }
+      .mobile-header-aside-menu{
+          display: flex;
+          width: 336px;
+          position: sticky;
+          top: 0;
+           left: 0;
+      }
+      .mobile-header-acordion-container{
+          padding:20px;
+          margin: 0 10px;
+          border-top: 1px solid grey;
+          
+      }
+      .mobile-acordion-block{
+          li{
+
+              &.dropdown{
+                  .dropdown-top-item{
+                      width: 260px;
+                      height: auto;
+                      display: flex;
+                      align-items: center;
+                      justify-content: space-between;
+                      cursor: pointer;
+                      padding: 10px ;
+                      border-bottom: 1px solid grey;
+                  }
+                  .dropdown-mid-item{
+                      width: 240px;
+                      height: auto;
+                      display: flex;
+                      align-items: center;
+                      justify-content: space-between;
+                      cursor: pointer;
+                      padding: 10px ;
+                      border-bottom: 1px solid grey;
+                    &:hover{
+                      background: $red;
+                      a{
+                        color: white;
+                      }
+                      .gg-chevron{
+                        color: white;
+                      }
+                    }
+                      
+                  }
+                  .dropdown-bottom-item{
+                      width: 220px;
+                      height: auto;
+                      display: flex;
+                      align-items: center;
+                      justify-content: space-between;
+                      cursor: pointer;
+                      padding: 10px ;
+                      border-bottom: 1px solid grey;
+                  }
+
+
+                  &.opened{
+                      background: $red;
+                      .dropdown-top-item{
+                        a{color: white;}
+                        .gg-chevron{
+                          color: white;
+                        }
+                      }
+
+                      .top-menu{
+                          display: flex;
+                          flex-direction: column;
+                          align-items: center;
+                          background: white;
+                          a{
+                              font-size: 14px;
+                          }
+                          &.dropdown{
+                              &.opened{
+                                  display: flex;
+                                  flex-direction: column;
+                                 ul{
+                                     .mid-menu{
+                                         display: flex;
+                                         flex-direction: column;
+                                         align-items: center;
+                                         justify-content: center;
+
+                                     }
+                                 }
+                              }
+                          }
+                          ul{
+                              background: white;
+                          }
+                          li{
+                              background: white;
+
+                          }
+
+                      }
+
+                  }
+
+              }
+              ul{
+                  display: none;
+              }
+              &:hover{
+                  background: $red;
+              }
+          }
+      }
+  }
+  }
+  .contents-wrapper{
+    .contents-container{
+      flex-direction: column;
+      .text-block,.image-block{
+        width: 100%;
+      }
+      .image-block{
+
+      }
+    }
+    &.second{
+      .contents-container{
+        flex-direction: column-reverse;
+      }
+
+    }
+  }
+  .contact-us-root{
+    flex-direction: column;
+    .contact-section{
+      width: 100%!important;
+
+    }
+  }
+
+  
+}
+
+@media only screen and (max-width: 990px){
+.banner-root{
+  height: auto;
+  .banner-wrapper{
+    flex-direction: column;
+    padding: 30px 20px;
+    .image-container{
+      margin: 45px 0 0;
+      width: 100%;
+    }
+    .text-container{
+      width: 100%;
+
+    }
+  }
+}
+  .banner-tours-root{
+    padding: 60px 20px 60px 20px;
+    .banner-tours-container{
+      flex-direction: column;
+      .text-container{
+        width: 100%;
+        .mid-text-block{
+          h4{
+            font-size: 55px;
+          }
+        }
+      }
+      .image-container{
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+.banner-doctor-root{
+  .banner-doctor-wrapper{
+    flex-direction: column;
+    height: auto;
+    padding: 60px 20px;
+    .text-container{
+      width: 100%;
+      text-align: center;
+    }
+
+    .image-container{
+      width: 100%;
+
+    }
+  }
+  .banner-tangreal-top-item{
+    top: -5px;
+  }
+}
+  .banner-form-root{
+    .banner-form-wrapper{
+      flex-direction: column;
+      padding: 50px 20px;
+      height: auto;
+    }
+    .image-container{
+      width: 100%;
+    }
+    .form-container{
+      width: 100%;
+      margin: 0;
+    }
+
+  }
+  .footer-root{
+    .footer-mid-container{
+      flex-direction: column;
+      .contact-container{
+        border: none;
+        margin: 30px 0 0;
+        padding: 0;
+        width: 100%;
+        justify-content: center;
+      }
+    }
+  }
+}
